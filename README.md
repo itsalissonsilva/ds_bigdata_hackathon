@@ -20,6 +20,7 @@ Before running the scripts, set up the required environment.
 ### Step 1: Add Your Data
 
 We have included a folder named simulated_january created from the train data in order to check if the scripts to preprocess the data and evaluate the model work correctly. You can modify the path source to your actual January data in the script itself by following the instructions below. 
+
 ---
 1.  Extract your data to a folder in the project's directory.
 2.  Unzip your new raw data and place the three Parquet files (e.g., `part27.snappy.parquet`, `part51.snappy.parquet`, `part71.snappy.parquet`) inside this folder, it can be the data folder.
