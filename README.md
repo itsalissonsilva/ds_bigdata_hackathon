@@ -28,7 +28,6 @@ We have included a folder named jan23_simul created from the train data in order
 
 ```bash
     IN_DIR = BASE_DIR / "data" / "jan23_simul"
-    # Load inputs
     df27 = pd.read_parquet(IN_DIR / "part27_jan.parquet")
     df71 = pd.read_parquet(IN_DIR / "part71_jan.parquet")
     df51 = pd.read_parquet(IN_DIR / "part51_jan.parquet")
@@ -56,7 +55,7 @@ This script uses the test.csv file you just created to score the model. Unzip th
 ```bash
 BASE_DIR   = Path(__file__).resolve().parent
 TEST_CSV   = BASE_DIR / "test.csv"
-MODEL_PATH = BASE_DIR / "lgbm_model_cap.pkl"              # like model_folder/lgbm_model_cap.pkl
+MODEL_PATH = BASE_DIR / "lgbm_model_cap.pkl"              # unzip the model first
 OUT_PREDS  = BASE_DIR / "data" / "predictions.csv"
 ```
 
