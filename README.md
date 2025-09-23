@@ -19,11 +19,11 @@ Before running the scripts, set up the required environment.
 
 ### Step 1: Add Your Data
 
-We have included a folder named simulated_january created from the train data in order to check if the scripts to preprocess the data and evaluate the model work correctly. You can modify the path source to your actual January data in the script itself by following the instructions below. 
+We have included a folder named jan23_simul created from the train data in order to check if the scripts to preprocess the data and evaluate the model work correctly. You can modify the path source to your actual January data in the script itself by following the instructions below. 
 
 ---
 1.  Extract your data to a folder in the project's directory.
-2.  Unzip your new raw data and place the three Parquet files (e.g., `part27.snappy.parquet`, `part51.snappy.parquet`, `part71.snappy.parquet`) inside this folder, it can be the data folder.
+2.  Unzip your new raw data and place the three Parquet files (e.g., `part27.snappy.parquet`, `part51.snappy.parquet`, `part71.snappy.parquet`) inside a folder you'll determine in the path, it can be the data folder.
 3. Update the info in the preprocessing script to use the same path you unzipped it to, change the file names too to the ones in your zipped file:
 
 ```bash
@@ -51,7 +51,7 @@ This will create a single, model-ready test.csv file inside the data/ folder.
 ---
 ### Step 3: Run the Evaluation Script
 
-This script uses the test.csv file you just created to score the model. Modify the paths accordingly:
+This script uses the test.csv file you just created to score the model. Unzip the trained model from the models folder and modify the paths accordingly:
 
 ```bash
 BASE_DIR   = Path(__file__).resolve().parent
