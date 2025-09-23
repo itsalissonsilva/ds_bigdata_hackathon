@@ -20,7 +20,7 @@ Before running the scripts, set up the required environment.
 ### Step 1: Add Your Data
 
 We have included a folder named simulated_january created from the train data in order to check if the scripts to preprocess the data and evaluate the model work correctly. You can modify the path source to your actual January data in the script itself by following the instructions below. 
-
+---
 1.  Extract your data to a folder in the project's directory.
 2.  Unzip your new raw data and place the three Parquet files (e.g., `part27.snappy.parquet`, `part51.snappy.parquet`, `part71.snappy.parquet`) inside this folder, it can be the data folder.
 3. Update the info in the preprocessing script to use the same path you unzipped it to, change the file names too to the ones in your zipped file:
@@ -35,7 +35,7 @@ We have included a folder named simulated_january created from the train data in
 
 The data must have the same format as the train data provided in order to work correctly.
 
-
+---
 
 ### Step 2: Run the Preprocessing Script
 
@@ -47,7 +47,7 @@ python preprocess.py
 ```
 This will create a single, model-ready test.csv file inside the data/ folder.
 
-
+---
 ### Step 3: Run the Evaluation Script
 
 This script uses the test.csv file you just created to score the model. Modify the paths accordingly:
@@ -73,23 +73,23 @@ This will return the wmape for the model on that period.
 
 ## Models tested
 
-Exploratory Data Analysis - Hevenicio
-Linear Regression Baseline - Gabriel
-Extreme Gradient Boosting (XGB) - João
-Light Gradient Boosting (LGBM) - Alisson
-LSTM (w/ Keras) - Clara
-LSTM (w/ Pytorch) - Alisson
+Exploratory Data Analysis - Hevenicio  
+Linear Regression Baseline - Gabriel  
+Extreme Gradient Boosting (XGB) - João  
+Light Gradient Boosting (LGBM) - Alisson  
+LSTM (w/ Keras) - Clara  
+LSTM (w/ Pytorch) - Alisson  
 
 
 
 
 ## Improvements tbd
 
-Database support
-API endpoint
-train script to update model
-forecast.py
-AWS Deployment (or any other Cloud provider)
-Clarification regarding negative values etc
-Grid search more robust
-Test more SOTA models: TimesFM, Neural Prophet, TFT etc. 
+* Database support
+* API endpoint
+* train script to update model
+* forecast.py
+* AWS Deployment (or any other Cloud provider)
+* Clarification regarding negative values etc
+* Grid search more robust
+* Test more SOTA models: TimesFM, Neural Prophet, TFT etc. 
