@@ -8,7 +8,13 @@ This project contains the notebooks used to train the models for the Big Data ha
 Before running the scripts, set up the required environment.
 
 1.  **Clone the repository** (or download the files).
+
+    ```bash
+    git clone https://github.com/itsalissonsilva/ds_bigdata_hackathon
+    ```
+
 2.  **Install the dependencies** by running the following command in your terminal from the project's root directory:
+   
     ```bash
     pip install -r requirements.txt
     ```
@@ -19,7 +25,7 @@ Before running the scripts, set up the required environment.
 
 ### Step 1: Add Your Data
 
-We have included a folder named jan23_simul created from the train data in order to check if the scripts to preprocess the data and evaluate the model work correctly. You can modify the path source to your actual January data in the script itself by following the instructions below. 
+We have included a folder named jan23_simul created from the train data in order to check if the scripts to preprocess the data and evaluate the model work correctly. You can run preprocessing.py and evaluate.py directly or modify the path source to your actual January data in the script itself by following the instructions below. 
 
 ---
 1.  Extract your data to a folder in the project's directory.
@@ -87,7 +93,7 @@ LSTM (w/ Pytorch) - Alisson
 
 * Database support
 * API endpoint
-* train script to update model
+* train script to update model in case of drift
 * forecast.py
 * AWS Deployment (or any other Cloud provider)
 * Clarification regarding negative values etc
